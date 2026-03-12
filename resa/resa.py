@@ -16,4 +16,13 @@ class Room(Enum):
     return "Refused"
 
 def bookMeetingRoom(participants):
-  return Room.REFUSE
+    if 1<= participants <=10 :
+        return Room.SMALL
+    elif 11 <= participants <= 30 :
+        return Room.MEDIUM
+    elif 31 <= participants <= 50 :
+        return Room.LARGE
+    elif 51 <= participants :
+        return Room.REFUSE
+    else:
+        raise ValueError ("Un nombre de personnes doit etre d'au moins 1")
