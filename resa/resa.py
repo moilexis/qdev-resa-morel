@@ -26,3 +26,4 @@ def bookMeetingRoom(participants):
         return Room.REFUSE
     else:
         raise ValueError ("Un nombre de personnes doit etre d'au moins 1")
+#print(Room.REFUSE)
